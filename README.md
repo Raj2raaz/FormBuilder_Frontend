@@ -1,12 +1,44 @@
-# React + Vite
+# 📝 Form Builder Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic form builder application built with **React**, allowing users to:
+- Create custom forms with various input types
+- Drag and drop to reorder inputs
+- Edit existing forms
+- Submit form responses
+- View previously submitted responses
 
-Currently, two official plugins are available:
+> 🔥 No third-party UI libraries were used (except for drag-and-drop and notifications)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Create and edit forms
+- 🧩 Add inputs (Text, Number, Email, Password, Date)
+- ✏️ Edit input title and placeholder
+- 🎯 Drag and drop input fields to reorder (using `@dnd-kit`)
+- 🧹 Delete inputs
+- 📦 Save and load forms from backend
+- 📬 Submit responses and view them
+- 🔔 Toast notifications for all actions (`react-toastify`)
+
+---
+
+## 🧱 Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **@dnd-kit** – drag and drop functionality
+- **React Router** – routing
+- **React Toastify** – notification system
+- **Axios** – API requests (assumed via custom `API.js` instance)
+
+---
+
+## 🧰 Available Scripts
+
+### Start the app
+
+```bash
+npm install
+npm run dev
